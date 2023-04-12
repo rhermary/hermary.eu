@@ -1,164 +1,177 @@
-<style>
-body {
-    background-color: #232324
-}
+<head>
+    <style>
+        html[link-blocks-display='1'] {
+            --link-left-margin: 10%;
+            --link-width: 20%;
+            --title-font-size: 6vw;
+            --desc-font-size: 2vw;
+            --title-margin-top: 3%;
+            --title-margin-bottom: 0%;
+        }
 
-a img {
-    margin: 1%;
-    width: 100%;
-}
+        html[link-blocks-display='2'] {
+            --link-left-margin: 10%;
+            --link-width: 35%;
+            --title-font-size: 6vw;
+            --desc-font-size: 3vw;
+            --title-margin-top: 3%;
+            --title-margin-bottom: 0%;
+        }
 
-.link-block {
-    text-align: center;
-    width: 15%;
-    margin-top: 10%;
-    margin-left: 2%;
-    margin-right: 2%;
-    float: left;
-    transform: translateY(-50%);
-}
+        html[link-blocks-display='3'] {
+            --link-left-margin: 20%;
+            --link-width: 60%;
+            --title-font-size: 7vw;
+            --desc-font-size: 4vw;
+            --title-margin-top: 3%;
+            --title-margin-bottom: 5%;
+        }
 
-.link-block-mobile {
-    text-align: center;
-    width: 60%;
-    margin-top: 20%;
-    margin-left: 2%;
-    margin-right: 2%;
-}
+        html[link-blocks-display='4'] {
+            --link-left-margin: 20%;
+            --link-width: 60%;
+            --title-font-size: 100px;
+            --desc-font-size: 50px;
+            --title-margin-top: 7%;
+            --title-margin-bottom: 5%;
+        }
 
-.box {
-    margin-left: 30%;
-    clear: both
-}
+        body {
+            background-image: linear-gradient(180deg, #232324, #252536);
+        }
 
-.box-mobile {
-    margin-left: 25%;
-}
+        a img {
+            margin: 1%;
+            width: 100%;
+        }
 
-.title {
-    text-align: center;
-    color: white;
-    font-family: "Lucida Bright";
-    font-size: 50px;
-    margin-top: 2%;
-    margin-bottom: 4%;
-}
+        .link-blocks {
+            margin-bottom: 5%;
+            overflow: auto;
+        }
 
-.title-mobile {
-    text-align: center;
-    color: white;
-    font-family: "Lucida Bright";
-    font-size: 100px;
-    margin-top: 4%;
-    margin-bottom: 4%;
-}
+        .link-block {
+            text-align: center;
+            width: var(--link-width);
+            margin-top: 10%;
+            margin-left: var(--link-left-margin);
+            margin-right: 0%;
+            float: left;
+        }
 
-.desc {
-    text-align: center;
-    color: white;
-    font-family: "Lucida Bright";
-}
+        .link-left-border {
+            clear: both;
+        }
 
-.desc-mobile {
-    text-align: center;
-    color: white;
-    font-family: "Lucida Bright";
-    font-size: 50px;
-    margin-top: 3%
-}
+        .title {
+            text-align: center;
+            color: white;
+            font-family: "Lucida Bright";
+            font-size: var(--title-font-size);
+            margin-top: var(--title-margin-top);
+            margin-bottom: var(--title-margin-bottom);
+            font-weight: bolder;
+        }
 
+        .desc {
+            text-align: center;
+            color: white;
+            font-family: "Lucida Bright";
+            font-size: var(--desc-font-size);
+            margin-top: 5%;
+            font-weight: lighter;
+        }
 
-a {
-    text-decoration: none;
-    border-bottom: none;
-}
-</style>
+        a {
+            text-decoration: none;
+            border-bottom: none;
+        }
+    </style>
 
-<link rel="icon" href="img/kazoryah-logo.png">
-<meta name="description" content="Romain HERMARY, research student in machine
-learning and computer vision. Find here all the useful links to get to know me
-and contact me.">
+    <link rel="icon" href="img/kazoryah-logo.png">
+    <meta name="description" content="Romain HERMARY, research student in machine
+    learning and computer vision. Find here all the useful links to get to know me
+    and contact me.">
 
-<title>Romain HERMARY - Machine Learning Engineer</title>
+    <title>Romain HERMARY - Machine Learning Engineer</title>
+</head>
 
-<p class="title">Romain HERMARY</p>
+<body>
+    <p class="title">Romain HERMARY</p>
 
-<div class="box">
+    <div class="link-blocks">
+        <div class="link-block" id="link-1">
+            <a href="/cv">
+                <img src="img/profile-pic.png">
+                <p class="desc"><b>Latest Resume</b></p>
+            </a>
+        </div>
 
-<div class="link-block">
-<a href="/cv">
-<img src="img/profile-pic.png">
-<p class="desc"><b>Latest Resume</b></p>
-</a>
-</div>
+        <div class="link-block" id="link-2">
+            <a href="https://www.linkedin.com/in/romain-hermary/">
+                <img src="img/linkedin-icon.png">
+                <p class="desc"><b>LinkedIn</b></p>
+            </a>
+        </div>
 
-<div class="link-block">
-<a href="https://www.linkedin.com/in/romain-hermary/">
-<img src="img/linkedin-icon.png">
-<p class="desc"><b>LinkedIn</b></p>
-</a>
-</div>
+        <div class="link-block" id="link-3">
+            <a href="https://scholar.google.com/citations?user=-vWTemwAAAAJ&hl=de&oi=ao">
+                <img src="img/google-scholar-logo.png">
+                <p class="desc"><b>Google Scholar</b></p>
+            </a>
+        </div>
 
-<div class="link-block">
-<a href="https://scholar.google.com/citations?user=-vWTemwAAAAJ&hl=de&oi=ao">
-<img src="img/google-scholar-logo.png">
-<p class="desc"><b>Google Scholar</b></p>
-</a>
-</div>
+        <div class="link-block" id="link-4">
+            <a href="https://kazoryah.github.io">
+                <img src="img/kazoryah-logo.png">
+                <p class="desc"><b>Blog</b></p>
+            </a>
+        </div>
 
-</div>
+        <div class="link-block" id="link-5">
+            <a href="https://cvi2.uni.lu/">
+                <img src="img/unilu-logo.png">
+                <p class="desc"><b>Doctoral Lab</b></p>
+            </a>
+        </div>
 
+        <div class="link-block" id="link-6">
+            <a href="https://github.com/Kazoryah">
+                <img src="img/github-logo.png">
+                <p class="desc"><b>GitHub</b></p>
+            </a>
+        </div>
+    </div>
 
-<div class="box">
+    <script>
+        function resizeHandle() {
+            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            const html = document.getElementsByTagName("html")[0]
+            const linkBlocks = Array.from(document.querySelectorAll(".link-block"))
+            var leftBorderBlocks = []
+            if (isMobile) {
+                leftBorderBlocks = linkBlocks;
+                html.setAttribute("link-blocks-display", "4");
+            } else if (window.innerWidth < 500) {
+                leftBorderBlocks = linkBlocks;
+                html.setAttribute("link-blocks-display", "3");
+            } else if (window.innerWidth < 700) {
+                leftBorderBlocks = Array.from(document.querySelectorAll("#link-1, #link-3, #link-5"));
+                html.setAttribute("link-blocks-display", "2");
+            } else {
+                leftBorderBlocks = Array.from(document.querySelectorAll("#link-1, #link-4"));
+                html.setAttribute("link-blocks-display", "1");
+            }
 
-<div class="link-block">
-<a href="https://kazoryah.github.io">
-<img
-src="img/kazoryah-logo.png">
-<p class="desc"><b>Blog</b></p>
-</a>
-</div>
-
-<div class="link-block">
-<a href="https://cvi2.uni.lu/">
-<img src="img/unilu-logo.png">
-<p class="desc"><b>Doctoral Lab</b></p>
-</a>
-</div>
-
-<div class="link-block">
-<a href="https://github.com/Kazoryah">
-<img src="img/github-logo.png">
-<p class="desc"><b>GitHub</b></p>
-</a>
-</div>
-
-<script>
-var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-if (isMobile) {
-    const linkBlocks = document.querySelectorAll('.link-block');
-
-    linkBlocks.forEach(element => {
-        element.className = "link-block-mobile";
-    });
-
-    const boxes = document.querySelectorAll('.box');
-
-    boxes.forEach(element => {
-        element.className = "box-mobile";
-    });
-
-
-    const descs = document.querySelectorAll('.desc');
-
-    descs.forEach(element => {
-        element.className = "desc-mobile";
-    });
-
-    const title = document.querySelectorAll('.title')[0];
-    title.className = "title-mobile";
-}
-</script>
-
-
-</div>
+            const otherBlocks = linkBlocks.filter(element => !leftBorderBlocks.includes(element))
+            leftBorderBlocks.forEach(element => {
+                element.classList.add("link-left-border");
+            })
+            otherBlocks.forEach(element => {
+                element.classList.remove("link-left-border");
+            })
+        }
+        window.onresize = resizeHandle;
+        resizeHandle();
+    </script>
+</body>
