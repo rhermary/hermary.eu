@@ -1,0 +1,164 @@
+<style>
+body {
+    background-color: #232324
+}
+
+a img {
+    margin: 1%;
+    width: 100%;
+}
+
+.link-block {
+    text-align: center;
+    width: 15%;
+    margin-top: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
+    float: left;
+    transform: translateY(-50%);
+}
+
+.link-block-mobile {
+    text-align: center;
+    width: 60%;
+    margin-top: 20%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.box {
+    margin-left: 30%;
+    clear: both
+}
+
+.box-mobile {
+    margin-left: 25%;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    font-family: "Lucida Bright";
+    font-size: 50px;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+.title-mobile {
+    text-align: center;
+    color: white;
+    font-family: "Lucida Bright";
+    font-size: 100px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.desc {
+    text-align: center;
+    color: white;
+    font-family: "Lucida Bright";
+}
+
+.desc-mobile {
+    text-align: center;
+    color: white;
+    font-family: "Lucida Bright";
+    font-size: 50px;
+    margin-top: 3%
+}
+
+
+a {
+    text-decoration: none;
+    border-bottom: none;
+}
+</style>
+
+<link rel="icon" href="img/kazoryah-logo.png">
+<meta name="description" content="Romain HERMARY, research student in machine
+learning and computer vision. Find here all the useful links to get to know me
+and contact me.">
+
+<title>Romain HERMARY - Machine Learning Engineer</title>
+
+<p class="title">Romain HERMARY</p>
+
+<div class="box">
+
+<div class="link-block">
+<a href="/cv">
+<img src="img/profile-pic.png">
+<p class="desc"><b>Latest Resume</b></p>
+</a>
+</div>
+
+<div class="link-block">
+<a href="https://www.linkedin.com/in/romain-hermary/">
+<img src="img/linkedin-icon.png">
+<p class="desc"><b>LinkedIn</b></p>
+</a>
+</div>
+
+<div class="link-block">
+<a href="https://scholar.google.com/citations?user=-vWTemwAAAAJ&hl=de&oi=ao">
+<img src="img/google-scholar-logo.png">
+<p class="desc"><b>Google Scholar</b></p>
+</a>
+</div>
+
+</div>
+
+
+<div class="box">
+
+<div class="link-block">
+<a href="https://kazoryah.github.io">
+<img
+src="img/kazoryah-logo.png">
+<p class="desc"><b>Blog</b></p>
+</a>
+</div>
+
+<div class="link-block">
+<a href="https://cvi2.uni.lu/">
+<img src="img/unilu-logo.png">
+<p class="desc"><b>Doctoral Lab</b></p>
+</a>
+</div>
+
+<div class="link-block">
+<a href="https://github.com/Kazoryah">
+<img src="img/github-logo.png">
+<p class="desc"><b>GitHub</b></p>
+</a>
+</div>
+
+<script>
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+if (isMobile) {
+    const linkBlocks = document.querySelectorAll('.link-block');
+
+    linkBlocks.forEach(element => {
+        element.className = "link-block-mobile";
+    });
+
+    const boxes = document.querySelectorAll('.box');
+
+    boxes.forEach(element => {
+        element.className = "box-mobile";
+    });
+
+
+    const descs = document.querySelectorAll('.desc');
+
+    descs.forEach(element => {
+        element.className = "desc-mobile";
+    });
+
+    const title = document.querySelectorAll('.title')[0];
+    title.className = "title-mobile";
+}
+</script>
+
+
+</div>
